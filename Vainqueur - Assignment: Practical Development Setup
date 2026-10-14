@@ -1,0 +1,53 @@
+Flutter 
+flutter doctor
+flutter create my_first_app
+cd my_first_app
+flutter devices
+
+MySQL 
+CREATE DATABASE school;
+
+USE school;
+
+CREATE TABLE students (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(150) UNIQUE,
+    enrolled_on DATE
+);
+
+INSERT INTO students (name, email, enrolled_on)
+VALUES
+('John Doe', 'john.doe@example.com', '2026-09-01'),
+('Jane Smith', 'jane.smith@example.com', '2026-09-05');
+
+SELECT * FROM students;
+
+CREATE USER 'school_app'@'localhost'
+IDENTIFIED BY 'StrongPassword123!';
+
+GRANT SELECT, INSERT, UPDATE, DELETE
+ON school.*
+TO 'school_app'@'localhost';
+
+FLUSH PRIVILEGES;
+
+
+Python 
+mkdir python_setup_lab
+cd python_setup_lab
+python3 -m venv venv
+source venv/bin/activate
+pip install requests
+pip list
+pip freeze > requirements.txt
+cat requirements.txt
+
+VS Code
+Install these extensions:
+Flutter
+Dart
+Python
+Pylance
+MySQL
+
